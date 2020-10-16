@@ -54,7 +54,6 @@ html {
 }
 
 .container {
-  background-color: #fd9e2b;
   height: 100vmin;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +70,8 @@ html {
   background-color: #1c1919;
   border-radius: 21px;
   width: 484px;
-  height: 710px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container .calculator .top-pannel .first {
