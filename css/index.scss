@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$dark2: #3f4143;
+$dark1: #1c1919;
+$dark: #5f6062;
+$warning: #fd9e2b;
+$borderline: rgba(226, 223, 223, 0.65);
+$danger: #cb6262;
+$success: #90cb62;
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-warning {
+  background-color: $warning;
+}
+.bg-danger {
+  background-color: $danger;
+}
+.bg-success {
+  background-color: $success;
+}
+
+.btn-warning {
+  background-color: $warning;
+  color: white;
+}
+
+.btn {
+  height: 94px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: 300;
+}
+.btn-regular {
+  width: 114px;
+}
+.btn-dark {
+  background-color: $dark;
+  color: white;
+}
+
+.container {
+  background-color: $warning;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .calculator {
+    background-color: $dark1;
+    border-radius: 21px;
+    width: 484px;
+    height: 710px;
+    .top-pannel {
+      .first {
+        display: flex;
+        padding-top: 18px;
+        padding-left: 45px;
+        padding-right: 45px;
+        height: 64px;
+        .indicator {
+          width: 19px;
+          height: 19px;
+
+          border-radius: 100%;
+          margin-right: 22px;
+        }
+      }
+      .second {
+        // background-color: yellow;
+        height: 136px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 24px;
+        border-top: 2px solid $borderline;
+        border-bottom: 2px solid $borderline;
+        color: white;
+      }
+    }
+    .keys {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .first-row {
+        display: flex;
+        .ac {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+          background-color: $dark2;
+          color: white;
+        }
+      }
+    }
+  }
+}
