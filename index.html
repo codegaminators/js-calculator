@@ -5,51 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Calculator APP with JS</title>
+    <title>Javascript Calculator</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="calculator">
-            <div class="top-pannel">
-                <div class="first">
-                    <div class="indicator bg-danger"></div>
-                    <div class="indicator bg-warning"></div>
-                    <div class="indicator bg-success"></div>
-                </div>
-                <div class="second">
-                    <div class="placeholder">0</div>
-                </div>
+    <div class="calculator">
+        <div class="top-pannel">
+            <div class="first">
+                <div class="indicator bg-danger"></div>
+                <div class="indicator bg-warning"></div>
+                <div class="indicator bg-success"></div>
             </div>
-            <div class="keys">
-                <div class="row first-row">
-                    <button onclick="calc(this)" class="btn btn-dark1 ac">AC</button>
-                    <button onclick="calc(this)" class="btn btn-warning btn-regular">/</button>
-                </div>
-                <div class="row second-row">
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">7</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">8</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">9</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-warning">*</button>
-                </div>
-                <div class="row third-row">
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">4</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">5</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">6</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-warning">-</button>
-                </div>
-                <div class="row fourth-row">
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">1</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">2</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">3</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-warning">+</button>
-                </div>
-                <div class="row fifth-row">
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark flex-1">0</button>
-                    <button onclick="calc(this)" class="btn btn-regular btn-dark">.</button>
+            <div class="second">
+                <div class="placeholder">0</div>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="row1 first-row">
+                <button class="btn btn-dark1 flex-1">AC</button>
+                <button class="btn btn-regular btn-warning">/</button>
+            </div>
+            <div class="row1 second-row">
+                <button class="btn btn-dark btn-regular">7</button>
+                <button class="btn btn-dark btn-regular">8</button>
+                <button class="btn btn-dark btn-regular">9</button>
+                <button class="btn btn-warning btn-regular">*</button>
+            </div>
+            <div class="row1 third-row">
+                <button class="btn btn-dark btn-regular">4</button>
+                <button class="btn btn-dark btn-regular">5</button>
+                <button class="btn btn-dark btn-regular">6</button>
+                <button class="btn btn-warning btn-regular">-</button>
+            </div>
+            <div class="row1 fourth-row">
+                <button class="btn btn-dark btn-regular">1</button>
+                <button class="btn btn-dark btn-regular">2</button>
+                <button class="btn btn-dark btn-regular">3</button>
+                <button class="btn btn-warning btn-regular">+</button>
+            </div>
+            <div class="row1 fifth-row">
+                <button class="btn btn-dark btn-regular flex-1">0</button>
+                <button class="btn btn-dark btn-regular">.</button>
 
-                    <button onclick="calc(this)" class="btn btn-regular btn-warning">=</button>
-                </div>
+                <button class="btn btn-warning btn-regular">=</button>
             </div>
         </div>
     </div>

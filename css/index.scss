@@ -1,113 +1,75 @@
+@import "./variables";
+@import "./bootstrap/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-$dark2: #3f4143;
-$dark1: #1c1919;
-$dark: #5f6062;
-$warning: #fd9e2b;
-$borderline: rgba(226, 223, 223, 0.65);
-$danger: #cb6262;
-$success: #90cb62;
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
+.flex-1 {
+  flex: 1;
 }
 
-.flex-1 {
+body {
+  font-family: "Roboto", sans-serif;
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items: center;
+  //   background-color: red;
+  height: 100%;
+  //   height: 100vmin;
 }
-
-.bg-warning {
-  background-color: $warning;
-}
-.bg-danger {
-  background-color: $danger;
-}
-.bg-success {
-  background-color: $success;
-}
-
-.btn-warning {
-  background-color: $warning;
-  color: white;
-}
-
 .btn {
-  height: 94px;
-  border-radius: 10px;
   font-size: 40px;
   font-weight: 300;
+  height: 94px;
+  border-radius: 10px;
+}
+.btn-dark1 {
+  background-color: $dark1;
+  color: $light;
 }
 .btn-regular {
   width: 114px;
 }
-.btn-dark {
-  background-color: $dark;
-  color: white;
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.container {
-  // background-color: $danger;
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .calculator {
-    background-color: $dark1;
-    border-radius: 21px;
+.calculator {
+  background-color: $black;
+  width: 484px;
+  height: 100%;
+  //   min-height: 710px;
+  border-radius: 21px;
+  .first {
+    display: flex;
+    height: 64px;
+    // background-color: yellow;
+    padding: 18px 45px;
+    .indicator {
+      width: 19px;
+      height: 19px;
+      border-radius: 100%;
+      margin-right: 17px;
+    }
+  }
+  .second {
+    // background-color: yellow;
+    height: 136px;
+    border-top: $borderline;
+    border-bottom: $borderline;
+    color: $light;
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+  }
+  .keys {
     width: 484px;
-    box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.5);
-    // height: 710px;
-    .top-pannel {
-      .first {
-        display: flex;
-        padding-top: 18px;
-        padding-left: 45px;
-        padding-right: 45px;
-        height: 64px;
-        .indicator {
-          width: 19px;
-          height: 19px;
-
-          border-radius: 100%;
-          margin-right: 22px;
-        }
-      }
-      .second {
-        // background-color: yellow;
-        height: 136px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0 24px;
-        border-top: 2px solid $borderline;
-        border-bottom: 2px solid $borderline;
-        color: white;
-      }
-    }
-    .keys {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: space-between;
-      .row {
-        display: flex;
-        justify-content: space-between;
-      }
-      .first-row {
-        display: flex;
-        .ac {
-          display: flex;
-          flex: 1;
-          justify-content: center;
-          align-items: center;
-          background-color: $dark2;
-          color: white;
-        }
-      }
-    }
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    height: 100%;
   }
 }
